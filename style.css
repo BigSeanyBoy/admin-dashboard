@@ -44,6 +44,28 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.sidebar {
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-rows: 1fr 6fr 3fr;
+  gap: 20px;
+}
+
+.sidebar-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sidebar-nav {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.sidebar-settings {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
 img,
 .notifications {
   height: 50px;
