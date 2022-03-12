@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700&display=swap");
 
 :root {
   --blue-bg-color: #0ea5e9;
@@ -6,7 +6,7 @@
   --grey-bg-color: #9ca3af;
   --yellow-accent: #f59e0b;
   font-family: Roboto;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 12px;
 }
 
@@ -28,6 +28,7 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 .search {
@@ -43,6 +44,10 @@ body {
   grid-template-columns: 1fr 1fr 2fr;
 }
 
+.user-picture {
+  border-radius: 50%;
+}
+
 .welcome-message {
   grid-area: 2 / 1;
   display: grid;
@@ -53,6 +58,12 @@ body {
   grid-area: 2 / 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.post-buttons button {
+  background-color: var(--blue-bg-color);
+  color: white;
+  border: none;
 }
 
 .sidebar {
