@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
 :root {
   --blue-bg-color: #0ea5e9;
@@ -6,6 +6,8 @@
   --grey-bg-color: #9ca3af;
   --yellow-accent: #f59e0b;
   font-family: Roboto;
+  font-weight: 100;
+  font-size: 12px;
 }
 
 * {
@@ -20,7 +22,6 @@ body {
 }
 
 .header {
-  border: 1px solid black;
   padding: 1px;
   grid-column: 2 / 4;
   grid-row: 1;
@@ -59,21 +60,41 @@ body {
   display: grid;
   grid-template-rows: 1fr 6fr 3fr;
   gap: 20px;
+  background-color: var(--blue-bg-color);
+  color: white;
+  font-weight: bold;
 }
 
-.sidebar-header {
+.sidebar button {
+  background-color: var(--blue-bg-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.sidebar-header,
+.sidebar button {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sidebar-nav,
+.sidebar-settings {
   display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .sidebar-nav {
-  display: grid;
   grid-template-rows: repeat(6, 1fr);
 }
 
 .sidebar-settings {
-  display: grid;
   grid-template-rows: repeat(3, 1fr);
+}
+
+.sidebar-nav img,
+.sidebar-settings img {
+  height: 2rem;
+  width: 2rem;
 }
 
 .main-content {
