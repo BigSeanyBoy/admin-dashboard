@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --blue-bg-color: #0ea5e9;
+  --white-bg-color: whitesmoke;
+  --grey-bg-color: #9ca3af;
+  --yellow-accent: #f59e0b;
+  font-family: Roboto;
+}
+
 * {
   margin: 0;
   padding: 0;
