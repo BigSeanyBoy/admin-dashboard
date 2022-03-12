@@ -66,6 +66,70 @@ body {
   grid-template-rows: repeat(3, 1fr);
 }
 
+.main-content {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+}
+
+.projects-header {
+  grid-row: 1;
+}
+
+.project-cards {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  height: 200px;
+  width: 300px;
+}
+
+.announcements {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+}
+
+.anno-header {
+  grid-row: 1;
+}
+
+.anno-cards {
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: repeat(autofit, 1fr);
+}
+
+.trending {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+}
+
+.trend-header {
+  grid-row: 1;
+}
+
+.trend-cards {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(autofit, 1fr);
+}
+
 img,
 .notifications {
   height: 50px;
