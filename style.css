@@ -180,7 +180,7 @@ body {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   background-color: var(--grey-bg-color);
-  z-index: -1;
+  /* z-index: -1; */
   padding-bottom: 20px;
 }
 
@@ -231,7 +231,6 @@ body {
 
 .card-icon-row {
   padding-bottom: 10px;
-  grid-column: 2;
   grid-column: 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -346,4 +345,10 @@ hr {
 .trend-row p {
   grid-column: 2;
   padding: 1px 0 1px 10px;
+}
+
+button,
+.card:hover,
+.trend-row:hover {
+  cursor: pointer;
 }
